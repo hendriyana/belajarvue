@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Vue [Perulangan]</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="app">
+        <span v-for="i in data_array">
+            {{ i.text }}<br>
+        </span>
+    </div>
+
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data:{
+                data_array : [
+                    {text : 'Belajar Javascript'},
+                    {text : 'Belajar Vue'},
+                    {text : 'Frontend Developer'}],
+                kondisi : true,
+                nilai : 1,
+                pesan : "Halooo Bre !"
+            }
+        })
+    </script>
+</body>
+</html>
